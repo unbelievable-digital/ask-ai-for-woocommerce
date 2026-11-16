@@ -33,7 +33,6 @@ add_action(
 	'plugins_loaded',
 	static function () {
 		AIPC_Frontend::init();
-		add_action( 'init', 'aipc_load_textdomain', 0 );
 		add_action( 'init', array( 'AIPC_Product_Admin', 'register_meta' ) );
 
 		if ( is_admin() ) {
@@ -57,14 +56,6 @@ add_action(
 		}
 	}
 );
-
-/**
- * Load translations from wp-content/languages/plugins/ (translate.wordpress.org / Loco Translate)
- * or, as a fallback, from this plugin's /languages folder.
- */
-function aipc_load_textdomain() {
-	load_plugin_textdomain( 'ask-ai-for-woocommerce', false, dirname( plugin_basename( AIPC_FILE ) ) . '/languages' );
-}
 
 // No defaults are written on activation: untouched settings fall back to
 // AIPC_Settings::defaults() at runtime, so they always follow the current site language.
