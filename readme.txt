@@ -1,5 +1,5 @@
-=== Ask AI for WooCommerce – ChatGPT, Claude & Perplexity Product Buttons ===
-Contributors: Unbelievable Digital
+=== Ask AI for WooCommerce ===
+Contributors: zgrkaralar
 Tags: ai, chatgpt, woocommerce, product, claude
 Requires at least: 6.5
 Tested up to: 7.1
@@ -38,7 +38,7 @@ You don't write a prompt per product. Write one template with placeholders, and 
 * Lines with empty values are removed automatically ("Brand: {brand}" disappears for products without a brand)
 * Live prompt preview with test links in the admin
 * Heading and subheading per store, category or product
-* Automatic placement on the product page, as a product tab, or anywhere with the `[ask_ai_buttons]` shortcode (Elementor, block themes, custom layouts)
+* Automatic placement on the product page, as a product tab, or anywhere with the `[aipc_buttons]` shortcode (Elementor, block themes, custom layouts)
 * Products list column showing where each product's prompt comes from, plus bulk actions
 * Works with the WooCommerce CSV importer, the REST API and WP-CLI
 * Click tracking for Google Tag Manager and GA4
@@ -83,8 +83,8 @@ From the standard WooCommerce product attributes (Products → Attributes, or th
 
 Choose a position in the settings: after the Add to cart button, at the end of the product summary, below the summary, or as a product tab. Or choose "Manual only" and use the shortcode:
 
-`[ask_ai_buttons]`
-`[ask_ai_buttons id="123" providers="chatgpt,claude" display="icons_labels" heading="…"]`
+`[aipc_buttons]`
+`[aipc_buttons id="123" providers="chatgpt,claude" display="icons_labels" heading="…"]`
 
 = How do I manage 1000+ products? =
 
@@ -120,6 +120,22 @@ Yes. The text domain is `ask-ai-for-woocommerce`, and `languages/ask-ai-for-wooc
 * The default heading, subheading and prompt template follow the site language until you change them.
 * WPML and Polylang can translate the settings texts, category fields and product fields (via wpml-config.xml).
 * `{language}` gives the store language in its own name ("English", "български", "Deutsch"), so it reads naturally in a translated template.
+
+== External services ==
+
+This plugin links to third-party AI assistants. It does not call any external API from your server, and it loads no external scripts, fonts or images.
+
+When a shopper clicks one of the buttons, their browser opens the selected AI assistant in a new tab. The prompt is passed in the link (the `q` URL parameter). The prompt contains the product information you configured in the template, by default: product name, product page URL, SKU, brand, category, price, visible attributes, store name and store language. No customer, order or personal data is included. Nothing is sent until the shopper clicks a button, and only to the assistant they clicked.
+
+Each assistant can be turned off in WooCommerce → Ask AI.
+
+* **ChatGPT** (OpenAI), `https://chatgpt.com/`: [Terms of use](https://openai.com/policies/terms-of-use/), [Privacy policy](https://openai.com/policies/privacy-policy/)
+* **Claude** (Anthropic), `https://claude.ai/`: [Consumer terms](https://www.anthropic.com/legal/consumer-terms), [Privacy policy](https://www.anthropic.com/legal/privacy)
+* **Google AI Mode** (Google), `https://www.google.com/search`: [Terms of service](https://policies.google.com/terms), [Privacy policy](https://policies.google.com/privacy)
+* **Grok** (xAI), `https://grok.com/`: [Terms of service](https://x.ai/legal/terms-of-service), [Privacy policy](https://x.ai/legal/privacy-policy)
+* **Perplexity** (Perplexity AI), `https://www.perplexity.ai/`: [Terms of service](https://www.perplexity.ai/hub/legal/terms-of-service), [Privacy policy](https://www.perplexity.ai/hub/legal/privacy-policy)
+
+The optional click tracking only pushes an `aipc_click` event to a Google Tag Manager dataLayer or gtag.js that your site already loads. The plugin itself does not load Google Analytics or Tag Manager.
 
 == Screenshots ==
 

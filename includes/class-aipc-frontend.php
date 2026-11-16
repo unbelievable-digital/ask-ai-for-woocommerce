@@ -12,7 +12,7 @@ class AIPC_Frontend {
 	public static function init() {
 		add_action( 'init', array( __CLASS__, 'register_assets' ) );
 		add_action( 'wp_enqueue_scripts', array( __CLASS__, 'maybe_enqueue' ) );
-		add_shortcode( 'ask_ai_buttons', array( __CLASS__, 'shortcode' ) );
+		add_shortcode( 'aipc_buttons', array( __CLASS__, 'shortcode' ) );
 		// Settings contain translated defaults, so read them on `init` (not earlier).
 		add_action( 'init', array( __CLASS__, 'register_placement' ) );
 	}
@@ -68,7 +68,7 @@ class AIPC_Frontend {
 	}
 
 	/**
-	 * [ask_ai_buttons id="123" heading="…" subheading="…" providers="chatgpt,claude" display="icons_labels"]
+	 * [aipc_buttons id="123" heading="…" subheading="…" providers="chatgpt,claude" display="icons_labels"]
 	 *
 	 * @param array $atts Shortcode attributes.
 	 * @return string
@@ -83,7 +83,7 @@ class AIPC_Frontend {
 				'display'    => '',
 			),
 			$atts,
-			'ask_ai_buttons'
+			'aipc_buttons'
 		);
 
 		$post_id = $atts['id'] ? absint( $atts['id'] ) : get_the_ID();

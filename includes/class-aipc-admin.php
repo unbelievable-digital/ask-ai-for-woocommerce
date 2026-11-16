@@ -182,7 +182,7 @@ class AIPC_Admin {
 		?>
 		<div class="wrap aipc-wrap">
 			<h1><?php esc_html_e( 'Ask AI for WooCommerce', 'ask-ai-for-woocommerce' ); ?></h1>
-			<?php settings_errors( $opt ); ?>
+			<?php settings_errors(); ?>
 
 			<div class="aipc-columns">
 				<form method="post" action="options.php" class="aipc-main">
@@ -210,7 +210,7 @@ class AIPC_Admin {
 									printf(
 										/* translators: %s: shortcode */
 										esc_html__( 'For Elementor, block themes or custom layouts use the shortcode %s anywhere on the product template.', 'ask-ai-for-woocommerce' ),
-										'<code>[ask_ai_buttons]</code>'
+										'<code>[aipc_buttons]</code>'
 									);
 									?>
 								</p>

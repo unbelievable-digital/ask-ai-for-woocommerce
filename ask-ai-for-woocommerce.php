@@ -1,12 +1,14 @@
 <?php
 /**
- * Plugin Name:       Ask AI for WooCommerce – ChatGPT, Claude & Perplexity Product Buttons
+ * Plugin Name:       Ask AI for WooCommerce
+ * Plugin URI:        https://github.com/unbelievable-digital/ask-ai-for-woocommerce
  * Description:       "Is this product right for you?" buttons that open ChatGPT, Claude, Google AI Mode, Grok or Perplexity with a ready-made prompt about the product. Prompts come from templates with product placeholders, with per-category and per-product overrides.
  * Version:           1.0.0
  * Requires at least: 6.5
  * Requires PHP:      7.4
  * Requires Plugins:  woocommerce
  * Author:            Unbelievable Digital
+ * Author URI:        https://github.com/unbelievable-digital
  * Text Domain:       ask-ai-for-woocommerce
  * Domain Path:       /languages
  * License:           GPL-2.0-or-later

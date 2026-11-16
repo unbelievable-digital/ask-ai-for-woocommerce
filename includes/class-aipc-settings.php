@@ -130,7 +130,7 @@ Please answer in {language}.",
 		$raw_providers    = isset( $input['providers'] ) && is_array( $input['providers'] ) ? $input['providers'] : array();
 		foreach ( AIPC_Providers::defaults() as $id => $provider ) {
 			$raw = isset( $raw_providers[ $id ] ) && is_array( $raw_providers[ $id ] ) ? $raw_providers[ $id ] : array();
-			$url = isset( $raw['url'] ) ? trim( wp_unslash( $raw['url'] ) ) : '';
+			$url = isset( $raw['url'] ) ? trim( (string) $raw['url'] ) : '';
 
 			if ( '' !== $url && ! AIPC_Providers::is_valid_url_template( $url ) ) {
 				add_settings_error(
