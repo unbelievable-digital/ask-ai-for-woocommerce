@@ -1,0 +1,471 @@
+# Copyright (C) 2026 
+# This file is distributed under the GPL-2.0-or-later.
+msgid ""
+msgstr ""
+"Project-Id-Version: Ask AI for WooCommerce – ChatGPT, Claude & Perplexity Product Buttons 1.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/ask-ai-for-woocommerce\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2026-11-16T15:20:53+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.11.0\n"
+"X-Domain: ask-ai-for-woocommerce\n"
+
+#. Plugin Name of the plugin
+#: ask-ai-for-woocommerce.php
+msgid "Ask AI for WooCommerce – ChatGPT, Claude & Perplexity Product Buttons"
+msgstr ""
+
+#. Description of the plugin
+#: ask-ai-for-woocommerce.php
+msgid "\"Is this product right for you?\" buttons that open ChatGPT, Claude, Google AI Mode, Grok or Perplexity with a ready-made prompt about the product. Prompts come from templates with product placeholders, with per-category and per-product overrides."
+msgstr ""
+
+#: ask-ai-for-woocommerce.php:76
+msgid "Settings"
+msgstr ""
+
+#: includes/class-aipc-admin.php:31
+#: includes/class-aipc-admin.php:184
+msgid "Ask AI for WooCommerce"
+msgstr ""
+
+#: includes/class-aipc-admin.php:32
+#: includes/class-aipc-frontend.php:63
+#: includes/class-aipc-product-admin.php:56
+#: includes/class-aipc-product-admin.php:268
+msgid "Ask AI"
+msgstr ""
+
+#: includes/class-aipc-admin.php:84
+msgid "Product not found or not allowed."
+msgstr ""
+
+#: includes/class-aipc-admin.php:156
+#: includes/class-aipc-prompt.php:29
+msgid "Product ID"
+msgstr ""
+
+#: includes/class-aipc-admin.php:157
+msgid "latest"
+msgstr ""
+
+#: includes/class-aipc-admin.php:162
+msgid "Preview prompt"
+msgstr ""
+
+#: includes/class-aipc-admin.php:191
+msgid "Display"
+msgstr ""
+
+#: includes/class-aipc-admin.php:194
+msgid "Enable"
+msgstr ""
+
+#: includes/class-aipc-admin.php:197
+msgid "Show the box on product pages automatically"
+msgstr ""
+
+#: includes/class-aipc-admin.php:201
+msgid "Position"
+msgstr ""
+
+#. translators: %s: shortcode
+#: includes/class-aipc-admin.php:212
+msgid "For Elementor, block themes or custom layouts use the shortcode %s anywhere on the product template."
+msgstr ""
+
+#: includes/class-aipc-admin.php:220
+msgid "Buttons"
+msgstr ""
+
+#: includes/class-aipc-admin.php:222
+msgid "Icons only"
+msgstr ""
+
+#: includes/class-aipc-admin.php:223
+msgid "Icons with names"
+msgstr ""
+
+#: includes/class-aipc-admin.php:224
+msgid "Open in a new tab"
+msgstr ""
+
+#: includes/class-aipc-admin.php:228
+#: includes/class-aipc-product-admin.php:271
+msgid "Heading"
+msgstr ""
+
+#: includes/class-aipc-admin.php:232
+#: includes/class-aipc-product-admin.php:275
+msgid "Subheading"
+msgstr ""
+
+#: includes/class-aipc-admin.php:235
+msgid "Both can be overridden per category and per product, and may contain placeholders."
+msgstr ""
+
+#: includes/class-aipc-admin.php:240
+msgid "Global prompt template"
+msgstr ""
+
+#. translators: %s: example template line, e.g. "Brand: {brand}"
+#: includes/class-aipc-admin.php:245
+msgid "Used for every product that has no category or product prompt. Placeholders are filled from the product. A line whose placeholders are all empty is removed automatically (e.g. %s for products without a brand)."
+msgstr ""
+
+#: includes/class-aipc-admin.php:254
+msgid "AI providers"
+msgstr ""
+
+#. translators: %s: the {prompt} placeholder
+#: includes/class-aipc-admin.php:259
+msgid "%s in the URL is replaced with the encoded prompt. Change a URL only if a provider changes its link format; leave it empty to use the default."
+msgstr ""
+
+#: includes/class-aipc-admin.php:267
+msgid "On"
+msgstr ""
+
+#: includes/class-aipc-admin.php:269
+msgid "Name"
+msgstr ""
+
+#: includes/class-aipc-admin.php:270
+msgid "URL template"
+msgstr ""
+
+#: includes/class-aipc-admin.php:271
+msgid "Order"
+msgstr ""
+
+#: includes/class-aipc-admin.php:294
+msgid "Advanced"
+msgstr ""
+
+#: includes/class-aipc-admin.php:297
+msgid "Max encoded prompt length"
+msgstr ""
+
+#: includes/class-aipc-admin.php:300
+msgid "Very long links can be rejected by AI sites. Non-Latin text (e.g. Cyrillic) takes ~6 characters per letter once encoded. Prompts above this limit are shortened at the end."
+msgstr ""
+
+#: includes/class-aipc-admin.php:310
+msgid "Prompt priority"
+msgstr ""
+
+#: includes/class-aipc-admin.php:312
+msgid "Custom prompt on the product"
+msgstr ""
+
+#: includes/class-aipc-admin.php:313
+msgid "Template on the product category (inherited by sub-categories; the Yoast / Rank Math primary category wins)"
+msgstr ""
+
+#: includes/class-aipc-admin.php:314
+msgid "Global template on this page"
+msgstr ""
+
+#: includes/class-aipc-admin.php:318
+msgid "Large catalogs"
+msgstr ""
+
+#: includes/class-aipc-admin.php:320
+msgid "Write one template per category (Products → Categories) instead of per product."
+msgstr ""
+
+#. translators: 1: {attributes} placeholder, 2: {attr:…} placeholder
+#: includes/class-aipc-admin.php:325
+msgid "Use %1$s or %2$s so specs are filled in automatically."
+msgstr ""
+
+#: includes/class-aipc-admin.php:331
+msgid "Bulk actions in the products list: hide/show the box or reset custom prompts."
+msgstr ""
+
+#. translators: 1: CSV column name, 2: CSV column name
+#: includes/class-aipc-admin.php:336
+msgid "CSV import/export: use the columns %1$s and %2$s."
+msgstr ""
+
+#. translators: %s: list of WP-CLI commands
+#: includes/class-aipc-admin.php:346
+msgid "WP-CLI: %s"
+msgstr ""
+
+#. translators: 1: AI provider name, 2: product name
+#: includes/class-aipc-frontend.php:162
+msgid "Ask %1$s about %2$s (opens in a new tab)"
+msgstr ""
+
+#. translators: 1: AI provider name, 2: product name
+#: includes/class-aipc-frontend.php:164
+msgid "Ask %1$s about %2$s"
+msgstr ""
+
+#. translators: %s: product category name
+#: includes/class-aipc-product-admin.php:74
+msgid "Using the prompt template of the category %s. Write a custom prompt below only if this product needs something different."
+msgstr ""
+
+#. translators: %s: product category name
+#: includes/class-aipc-product-admin.php:76
+msgid "Start from the template of the category %s"
+msgstr ""
+
+#: includes/class-aipc-product-admin.php:79
+msgid "Using the global prompt template. Write a custom prompt below only if this product needs something different."
+msgstr ""
+
+#: includes/class-aipc-product-admin.php:80
+#: includes/class-aipc-product-admin.php:283
+msgid "Start from the global template"
+msgstr ""
+
+#: includes/class-aipc-product-admin.php:86
+msgid "Hide the AI box for this product"
+msgstr ""
+
+#: includes/class-aipc-product-admin.php:92
+msgid "Using the custom prompt below."
+msgstr ""
+
+#: includes/class-aipc-product-admin.php:99
+msgid "Custom prompt (optional)"
+msgstr ""
+
+#: includes/class-aipc-product-admin.php:100
+msgid "Leave empty to use the category or global template"
+msgstr ""
+
+#: includes/class-aipc-product-admin.php:110
+msgid "Heading override"
+msgstr ""
+
+#: includes/class-aipc-product-admin.php:114
+msgid "Subheading override"
+msgstr ""
+
+#: includes/class-aipc-product-admin.php:169
+msgid "AI prompt"
+msgstr ""
+
+#: includes/class-aipc-product-admin.php:178
+msgid "Hidden"
+msgstr ""
+
+#: includes/class-aipc-product-admin.php:184
+msgid "Custom"
+msgstr ""
+
+#: includes/class-aipc-product-admin.php:190
+msgid "Global"
+msgstr ""
+
+#: includes/class-aipc-product-admin.php:195
+msgid "Ask AI: hide box"
+msgstr ""
+
+#: includes/class-aipc-product-admin.php:196
+msgid "Ask AI: show box"
+msgstr ""
+
+#: includes/class-aipc-product-admin.php:197
+msgid "Ask AI: remove custom prompt"
+msgstr ""
+
+#. translators: %s: number of products
+#: includes/class-aipc-product-admin.php:232
+msgid "Ask AI: %s product updated."
+msgid_plural "Ask AI: %s products updated."
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/class-aipc-product-admin.php:246
+msgid "Ask AI heading"
+msgstr ""
+
+#: includes/class-aipc-product-admin.php:250
+msgid "Ask AI subheading"
+msgstr ""
+
+#: includes/class-aipc-product-admin.php:254
+msgid "Ask AI prompt template"
+msgstr ""
+
+#: includes/class-aipc-product-admin.php:257
+#: includes/class-aipc-product-admin.php:286
+msgid "Applies to all products in this category and its sub-categories. Empty = inherit from the parent category or the global template."
+msgstr ""
+
+#: includes/class-aipc-product-admin.php:279
+msgid "Prompt template"
+msgstr ""
+
+#: includes/class-aipc-prompt.php:27
+msgid "Product name"
+msgstr ""
+
+#: includes/class-aipc-prompt.php:28
+msgid "Product page URL"
+msgstr ""
+
+#: includes/class-aipc-prompt.php:30
+msgid "SKU"
+msgstr ""
+
+#: includes/class-aipc-prompt.php:31
+msgid "Current price incl. currency (range for variable products)"
+msgstr ""
+
+#: includes/class-aipc-prompt.php:32
+msgid "Regular price (only when on sale)"
+msgstr ""
+
+#: includes/class-aipc-prompt.php:33
+msgid "Stock status"
+msgstr ""
+
+#: includes/class-aipc-prompt.php:34
+msgid "Short description (plain text, shortened)"
+msgstr ""
+
+#: includes/class-aipc-prompt.php:35
+msgid "Description (plain text, shortened)"
+msgstr ""
+
+#: includes/class-aipc-prompt.php:36
+msgid "Primary category"
+msgstr ""
+
+#: includes/class-aipc-prompt.php:37
+msgid "All categories"
+msgstr ""
+
+#: includes/class-aipc-prompt.php:38
+msgid "Brand"
+msgstr ""
+
+#: includes/class-aipc-prompt.php:39
+msgid "Tags"
+msgstr ""
+
+#: includes/class-aipc-prompt.php:40
+msgid "All visible attributes, one \"Name: value\" per line"
+msgstr ""
+
+#: includes/class-aipc-prompt.php:41
+msgid "Weight"
+msgstr ""
+
+#: includes/class-aipc-prompt.php:42
+msgid "Dimensions"
+msgstr ""
+
+#: includes/class-aipc-prompt.php:43
+msgid "Store name"
+msgstr ""
+
+#: includes/class-aipc-prompt.php:44
+msgid "Store URL"
+msgstr ""
+
+#: includes/class-aipc-prompt.php:45
+msgid "Store language, e.g. \"Bulgarian\""
+msgstr ""
+
+#: includes/class-aipc-prompt.php:46
+msgid "A single attribute by slug"
+msgstr ""
+
+#: includes/class-aipc-prompt.php:47
+msgid "Any custom field / ACF field"
+msgstr ""
+
+#: includes/class-aipc-prompt.php:48
+msgid "Terms of any taxonomy"
+msgstr ""
+
+#. translators: Default AI prompt template. Translate the sentences, but keep every {placeholder} exactly as it is (e.g. {product_name}, {product_url}, {attributes}). Keep one "Label: {placeholder}" per line.
+#: includes/class-aipc-settings.php:30
+msgid ""
+"I'm looking at {product_name} on {site_name}: {product_url}\n"
+"Help me decide whether this product is right for my needs. Explain what it is best suited for, its strengths and its limitations. If it does not fit my needs, suggest up to two better alternatives from {site_name}. Do not recommend products from other stores unless I explicitly ask.\n"
+"\n"
+"Important: do not invent specifications, prices or availability. Use the information from the product page above. If you cannot open it or something is missing, say so clearly.\n"
+"\n"
+"PRODUCT DETAILS\n"
+"Product: {product_name}\n"
+"SKU: {sku}\n"
+"Brand: {brand}\n"
+"Category: {category}\n"
+"Price: {price}\n"
+"{attributes}\n"
+"Product page: {product_url}\n"
+"\n"
+"Please answer in {language}."
+msgstr ""
+
+#: includes/class-aipc-settings.php:54
+msgid "Is this product right for you?"
+msgstr ""
+
+#: includes/class-aipc-settings.php:55
+msgid "Ask AI about the strengths and limitations of this model."
+msgstr ""
+
+#: includes/class-aipc-settings.php:83
+msgid "Product summary – after the Add to cart button"
+msgstr ""
+
+#: includes/class-aipc-settings.php:84
+msgid "Product summary – at the end"
+msgstr ""
+
+#: includes/class-aipc-settings.php:85
+msgid "Below the product summary (before tabs)"
+msgstr ""
+
+#: includes/class-aipc-settings.php:86
+msgid "As a product tab"
+msgstr ""
+
+#: includes/class-aipc-settings.php:87
+msgid "Manual only (shortcode / page builder)"
+msgstr ""
+
+#. translators: %s: provider name
+#: includes/class-aipc-settings.php:140
+msgid "The URL for %s must start with https:// and contain {prompt}. The default URL was restored."
+msgstr ""
+
+#: assets/js/admin.js:34
+msgid "Replace the current text with the template?"
+msgstr ""
+
+#: assets/js/admin.js:48
+msgid "Building preview…"
+msgstr ""
+
+#: assets/js/admin.js:59
+#: assets/js/admin.js:91
+msgid "Could not build the preview."
+msgstr ""
+
+#. translators: 1: product ID, 2: product name, 3: encoded URL length, 4: maximum length
+#: assets/js/admin.js:65
+msgid "#%1$d – %2$s · Encoded URL length: %3$d / %4$d"
+msgstr ""
+
+#: assets/js/admin.js:72
+msgid "The prompt is too long and will be shortened."
+msgstr ""
+
+#. translators: %s: AI provider name
+#: assets/js/admin.js:84
+msgid "Open the prompt in %s (new tab)"
+msgstr ""

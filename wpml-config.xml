@@ -1,0 +1,21 @@
+<wpml-config>
+	<!-- Lets WPML / Polylang translate the plugin's texts per language. -->
+	<admin-texts>
+		<key name="aipc_settings">
+			<key name="heading" />
+			<key name="subheading" />
+			<key name="template" />
+		</key>
+	</admin-texts>
+	<custom-fields>
+		<custom-field action="translate">_aipc_prompt</custom-field>
+		<custom-field action="translate">_aipc_heading</custom-field>
+		<custom-field action="translate">_aipc_subheading</custom-field>
+		<custom-field action="copy">_aipc_disabled</custom-field>
+	</custom-fields>
+	<custom-term-fields>
+		<custom-term-field action="translate">aipc_prompt</custom-term-field>
+		<custom-term-field action="translate">aipc_heading</custom-term-field>
+		<custom-term-field action="translate">aipc_subheading</custom-term-field>
+	</custom-term-fields>
+</wpml-config>

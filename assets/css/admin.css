@@ -1,0 +1,144 @@
+.aipc-columns {
+	display: flex;
+	gap: 24px;
+	align-items: flex-start;
+}
+
+.aipc-main {
+	flex: 1 1 auto;
+	min-width: 0;
+	max-width: 1000px;
+}
+
+.aipc-side {
+	flex: 0 0 300px;
+	position: sticky;
+	top: 48px;
+}
+
+.aipc-card {
+	background: #fff;
+	border: 1px solid #dcdcde;
+	border-radius: 6px;
+	padding: 4px 16px 12px;
+	margin-bottom: 16px;
+}
+
+.aipc-card ol,
+.aipc-card ul {
+	margin: 1em 0;
+	margin-inline-start: 18px;
+}
+
+.aipc-card ul {
+	list-style: disc;
+}
+
+.aipc-chips {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 4px;
+	margin: 8px 0 12px;
+}
+
+.aipc-chips .aipc-chip {
+	font-family: Consolas, Monaco, monospace;
+	font-size: 11px;
+}
+
+.aipc-preview {
+	background: #f6f7f7;
+	border: 1px solid #dcdcde;
+	border-radius: 6px;
+	padding: 4px 12px 8px;
+	margin: 8px 0 16px;
+}
+
+.aipc-preview-meta {
+	color: #50575e;
+}
+
+.aipc-preview-meta.aipc-warn {
+	color: #b32d2e;
+	font-weight: 600;
+}
+
+.aipc-preview-text {
+	background: #fff;
+}
+
+.aipc-preview-links .button {
+	margin: 0 4px 4px 0;
+}
+
+.aipc-providers-table td {
+	vertical-align: middle;
+}
+
+.aipc-admin-icon,
+.aipc-admin-icon svg {
+	display: inline-block;
+	width: 22px;
+	height: 22px;
+	vertical-align: middle;
+}
+
+.aipc-metabox .aipc-source {
+	background: #f0f6fc;
+	border-left: 4px solid #72aee6;
+	padding: 8px 12px;
+}
+
+.aipc-metabox .aipc-grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 12px;
+}
+
+.aipc-badge {
+	display: inline-block;
+	padding: 2px 8px;
+	border-radius: 10px;
+	background: #f0f0f1;
+	color: #50575e;
+	font-size: 12px;
+	max-width: 100%;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.aipc-badge--custom {
+	background: #edfaef;
+	color: #00a32a;
+}
+
+.aipc-badge--cat {
+	background: #f0f6fc;
+	color: #2271b1;
+}
+
+.aipc-badge--off {
+	background: #fcf0f1;
+	color: #b32d2e;
+}
+
+.column-aipc {
+	width: 110px;
+}
+
+@media (max-width: 1100px) {
+	.aipc-columns {
+		flex-direction: column;
+	}
+
+	.aipc-side {
+		position: static;
+		flex-basis: auto;
+		width: 100%;
+	}
+
+	.aipc-metabox .aipc-grid {
+		grid-template-columns: 1fr;
+	}
+}
